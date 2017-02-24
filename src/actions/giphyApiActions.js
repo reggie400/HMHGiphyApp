@@ -54,7 +54,7 @@ export const fetchGifyResults = (filter = 'cute+puppies+kittens', offset = 0) =>
     }) => {
       return dispatch(recieveGiphyResults(gifs));
     }).catch((err) => {
-        console.log('An error has occured whilst retrieving cute animals. Please try again later. ' + err);
+       return err; 
     });
   };
 };

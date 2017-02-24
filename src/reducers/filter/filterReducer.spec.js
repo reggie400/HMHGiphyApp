@@ -12,7 +12,7 @@ describe('Filter Reducer', () => {
     });
 
     it('should handle a RECIEVE_FILTER_UPDATE correctly', () => {
-        const state = 'cute+puppies+kittens'
+        const state = 'cute+puppies+kittens';
         const action = { type: RECIEVE_FILTER_UPDATE, data: 'cute+puppies' };
         const expected = 'cute+puppies';
         const actual = filterReducer(state, action);
